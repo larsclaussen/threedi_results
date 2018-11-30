@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  results:
+    image: threedi_results:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/srv
+    working_dir: /srv
+    ports:
+      - 8000:8000

@@ -1,0 +1,5 @@
+starlette==0.9.1
+aiofiles
+uvicorn==0.3.21
+threedigrid==1.0.7
+
