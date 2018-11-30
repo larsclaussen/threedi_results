@@ -69,8 +69,9 @@ def list_result_options(request):
       200:
         description: A list of result options per model type.
     """
+    model_name = request.path_params['model_name']
     gr = GridH5ResultAdmin(gridadmin_f, results_f)
-    return JSONResponse(gr.nodes._meta.get_fields(only_names=True))
+    return JSONResponse(getattr(gr, model_name)._meta.get_fields(only_names=True))
 
 @app.route('/flow_velocity/')
 async def flow_results(request):

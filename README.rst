@@ -26,7 +26,22 @@ Python Boilerplate contains all the boilerplate you need to create a Python pack
 Features
 --------
 
-* TODO
+Dev repo for a future threedi result API experiments.
+
+Example calls::
+
+    # Get node results for timesteps 1,2,3 for s1
+    http://0.0.0.0:8000/results/nodes/1,2,3/s1
+
+    # list node fields [testing list view really]
+    http://0.0.0.0:8000/results/nodes
+
+    # list line fields [testing list view really]
+    http://0.0.0.0:8000/results/lines
+
+    # Get line results for timesteps 3,8,26 for u1
+    http://0.0.0.0:8000/results/lines/3,8,26/u1
+
 
 Credits
 -------
